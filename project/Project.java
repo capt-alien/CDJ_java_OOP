@@ -15,7 +15,7 @@ public class Project{
     }
     // ● Create an instance method called elevatorPitch that will return the
     //   name and description separated by a colon.
-    public static String elevatorPitch(){
+    public String elevatorPitch(){
         String pitch = String.format("%s : %s", this.name, this.description);
         return pitch;
     }
