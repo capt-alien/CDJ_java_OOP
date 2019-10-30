@@ -1,11 +1,11 @@
 package zoo;
 
 public class Mammal {
-	public int energyLevel;
+	public int energyLevel=100;
 
-	public Mammal(int energy) {
-		this.energyLevel = energy;
-	}
+//	public Mammal(int energy) {
+//		this.energyLevel = energy;
+//	}
 	public int displayEnergy() {
 		return this.energyLevel;
 	}
