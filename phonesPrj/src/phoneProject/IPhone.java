@@ -10,19 +10,19 @@ public class IPhone extends Phone implements Ringable {
 	@Override
 	public String ring() {
 		// TODO Auto-generated method stub
-		return null;
+		return getRingTone();
 	}
 
 	@Override
 	public String unlock() {
 		// TODO Auto-generated method stub
-		return null;
+		return "iPhone Unlocked";
 	}
 
 	@Override
 	public void displayInfo() {
 		// TODO Auto-generated method stub
-
+		System.out.println(getCarrier()+getVersionNumber());
 	}
 
 }
