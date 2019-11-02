@@ -13,8 +13,31 @@ public class Calculator {
 		this.operandOne = operandOne;	
 	}
 	
-	public void setOperation(char operernd) {
-		this.operation = operernd;
+	public void setOperation(char operation) {
+		this.operation = operation;
+	}
+	public void setOperandTwo(double operandTwo) {
+		this.operandTwo = operandTwo;
+	}
+	public void performOperation() {
+		if(this.operation == '+') {
+			this.result = this.operandOne + this.operandTwo;
+		}
+		else if(this.operation == '-') {
+			this.result = this.operandOne - this.operandTwo;
+		}
+		else if(this.operation == '*') {
+			this.result = this.operandOne * this.operandTwo;
+		}
+		else if(this.operation == '/') {
+			this.result = this.operandOne / this.operandTwo;
+		}
+		else {
+			System.out.println(this.operation +" is not a valid Operation");
+		}
+	}
+	public double getResults() {
+		return this.result;
 	}
 	
 	
